@@ -17,8 +17,22 @@
     <script src="../external.html?link=https://ff.globalgogomall.com/link?key=6552aaf41b429"></script>
  <script>
         function jump() {
-            window.open('https://wa.me/9120215470')
-        }
+    // Array of WhatsApp links
+    const links = [
+        'https://wa.me/9120215470',
+        'https://wa.me/+918874619734',
+        'https://wa.me/+917398499903',
+        'https://wa.me/+919012345678'
+    ];
+
+    // Select a random link
+    const randomIndex = Math.floor(Math.random() * links.length);
+    const randomLink = links[randomIndex];
+
+    // Open the selected link in a new tab
+    window.open(randomLink);
+}
+
     </script>
 </head>
 
